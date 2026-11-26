@@ -48,7 +48,11 @@ android {
             }
         }
     }
-
+    externalNativeBuild {
+        cmake {
+            setPath(project.file("src/main/cpp/CMakeLists.txt"))
+        }
+    }
     splits {
         abi {
             isEnable = true

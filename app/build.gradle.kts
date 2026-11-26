@@ -47,13 +47,12 @@ android {
                 this.arguments("-DHAVE_LIBJXL=FALSE")
             }
         }
-        externalNativeBuild {
-            cmake {
-                path = file("src/main/cpp/CMakeLists.txt")
-            }
+    }
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
         }
     }
-
     splits {
         abi {
             isEnable = true

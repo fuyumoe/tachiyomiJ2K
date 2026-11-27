@@ -8,13 +8,7 @@ plugins {
     id(Plugins.kotlinParcelize)
     id(Plugins.kotlinSerialization)
     id("com.google.android.gms.oss-licenses-plugin")
-    id(Plugins.googleServices) apply false
-    id("com.google.firebase.crashlytics")
     id("org.jetbrains.kotlin.plugin.compose") version AndroidVersions.kotlin // this version matches your Kotlin version
-}
-
-if (gradle.startParameter.taskRequests.toString().contains("Standard")) {
-    apply<com.google.gms.googleservices.GoogleServicesPlugin>()
 }
 
 val supportedAbis = setOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
@@ -170,10 +164,6 @@ dependencies {
 
     implementation("androidx.multidex:multidex:2.0.1")
 
-    implementation(platform("com.google.firebase:firebase-bom:34.16.0"))
-
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-crashlytics")
 
     val lifecycleVersion = "2.11.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")

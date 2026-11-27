@@ -146,7 +146,7 @@ dependencies {
     implementation("androidx.glance:glance-appwidget:1.2.0-rc01")
 
     // Modified dependencies
-    implementation("com.github.jays2kings:subsampling-scale-image-view:7bb1a05")
+    implementation("com.github.fuyumoe:subsampling-scale-image-view:b9166b1")
     implementation("com.github.mihonapp:image-decoder:e03b81e18a")
 
     // Android X libraries

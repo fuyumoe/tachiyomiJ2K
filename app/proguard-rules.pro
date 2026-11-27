@@ -101,3 +101,8 @@
     public <init>();
     public void destroy();
 }
+
+# E-Ink 256: 保留 Native 类、单例字段和 JNI 方法
+-keep class com.zyyme.eink256.Eink256Native {
+    *;
+}

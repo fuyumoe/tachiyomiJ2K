@@ -231,8 +231,6 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.11.2")
     implementation("com.google.guava:guava:33.6.0-jre")
 
-    implementation("com.google.android.gms:play-services-gcm:17.0.0")
-
     // Database
     implementation("androidx.sqlite:sqlite-ktx:2.7.0")
     implementation("com.github.requery:sqlite-android:3.49.0")
